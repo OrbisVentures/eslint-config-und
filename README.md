@@ -48,7 +48,7 @@
 
   `npm install --save-dev eslint-config-und` or `yarn add eslint-config-und --dev`
 
-  Need this dependencies
+  ##### Implementacion for TypeScript
 
   `npm install eslint-config-und eslint-loader eslint-plugin-typescript typescript-eslint-parser --save-dev`
 

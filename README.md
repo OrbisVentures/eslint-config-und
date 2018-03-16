@@ -41,3 +41,50 @@
 #### Stylistic Issues
 
 - [x] [quotes](https://eslint.org/docs/rules/quotes) <kbd>error | single</kbd>
+
+#### Installation
+
+  Setup dependencies
+
+  `npm install --save-dev eslint-config-und` or `yarn add eslint-config-und --dev`
+
+  Need this dependencies
+
+  `npm install eslint-config-und eslint-loader eslint-plugin-typescript typescript-eslint-parser --save-dev`
+
+  or
+
+  `yarn add eslint-config-und eslint-loader eslint-plugin-typescript typescript-eslint-parser --save`
+
+  Add `.eslintrc` file:
+
+```json
+  {
+    "parser": "typescript-eslint-parser",
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "plugins": [
+        "typescript"
+    ],
+    "extends": "eslint-config-und"
+  }
+```
+
+  Add a object into entry module.exports from `webpack.config.js` 
+
+```json
+  {
+    enforce: 'pre',
+    test: /\.tsx?$/,
+    exclude: /node_modules/,
+    loader: 'eslint-loader'
+  }
+```
+
+So you can see eslint in acction:
+
+- ![#B82F16](https://placehold.it/15/B82F16/000000?text=+) Red for errors
+- ![#C5C33](https://placehold.it/15/C5C33/000000?text=+) Yellow for warn messages
+
+It's all.

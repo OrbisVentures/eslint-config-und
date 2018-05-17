@@ -45,6 +45,15 @@
 #### Installation
 
   Setup dependencies
+  
+  `npm install eslint`
+
+  or 
+
+  `yarn add eslint`
+
+
+  Setup devDependencies
 
   `npm install --save-dev eslint-config-und` 
 

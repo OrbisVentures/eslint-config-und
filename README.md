@@ -46,7 +46,11 @@
 
   Setup dependencies
 
-  `npm install --save-dev eslint-config-und` or `yarn add eslint-config-und --dev`
+  `npm install --save-dev eslint-config-und` 
+
+  or 
+
+  `yarn add eslint-config-und --dev`
 
   ##### Implementacion for TypeScript and Webpack
 
@@ -54,10 +58,10 @@
 
   or
 
-  `yarn add eslint-config-und eslint-loader eslint-plugin-typescript typescript-eslint-parser --save`
+  `yarn add eslint-config-und eslint-loader eslint-plugin-typescript typescript-eslint-parser --dev`
 
   Add `.eslintrc` file:
-
+****
 ```json
   {
     "parser": "typescript-eslint-parser",
